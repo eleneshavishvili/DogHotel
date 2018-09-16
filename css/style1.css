@@ -1,0 +1,39 @@
+.header {
+	
+	background: linear-gradient(to bottom, #709963, #1ad67c, #709963, #1ad67c );
+}
+
+.header h2 {
+	color:#fff;
+	font-weight: bold;
+}
+
+.text {
+	color: #fff;
+	font-size: 20px;
+}
+
+.content {
+	background-color:#a0db8e;
+	padding: 55px;
+}
+ .form {
+ 	border:solid 2px #ffffff;
+ }
+
+ .btn-primary {
+ 	background: #e1bf96;
+ 	border-color: #e1bf96;
+ 	width: 200px;
+ }
+
+ 
+.btn-primary:hover {
+	background: #e1bf96 !important;
+	border-color: #e1bf96 !important;
+	opacity: 0.7;
+	transition: all 300ms ease-in-out;
+}
+
+
+

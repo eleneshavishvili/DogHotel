@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel registration form</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylepreschool.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- header -->
+
+    <header class="header">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="col-md-12">
+            <h2 class="text-center wow bounceInRight">Hotel registration form</h2>
+          </div>
+        </div> 
+      </div>
+    </header>
+    
+
+ 
+    <!-- form -->
+
+    <div class="content">
+      <div class="container-fluid">
+        <div class="container">
+        <div id="result"></div>
+        <form class="col-md-8 col-md-offset-2 contact form" action="javascript:void(0)">
+          <div class="col-md-12">
+            <span style="color:red;">&#42 required</span>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s" style="margin-top: 20px;">
+              <label for="dogname" class="text wow fadeInUp"> dog name <span style="color:red">&#42</span></label>
+              <input type="text" id="dogname" class="form-control input" aria-describedby="sizing-addon1" placeholder="name" required>
+            </div>
+            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.0s" style="margin-top: 20px;">
+              <label for="dogbreed"  class="text wow fadeInUp"> dog breed <span style="color:red;">&#42</span></label>
+              <input type="text" id="dogbreed" class="form-control" aria-describedby="sizing-addon1" placeholder="breed" required>
+            </div>
+            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s" style="margin-top: 20px;">
+              <label for="birthday" class="text wow fadeInUp"> dog's birthday <span style="color:red;">&#42</span></label>
+              <input type="date" id="birthday" class="form-control" aria-describedby="sizing-addon1"  required>
+            </div>
+            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.4s" style="margin-top: 20px;">
+              <label for="pn" class="text wow fadeInUp"> The P/N of the dog's owner </label>
+              <input type="text" id="pn" class="form-control" aria-describedby="sizing-addon1" placeholder="p/n">
+            </div>
+            
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s" style="margin-top: 20px;">
+              <label for="name" class="text wow fadeInUp"> Full name of the dog's owner <span style="color:red;">&#42</span></label>
+              <input type="text" id="name" class="form-control" aria-describedby="sizing-addon1" placeholder="name, surname" required>
+            </div>
+            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.8s" style="margin-top: 20px;">
+              <label for="phone" class="text wow fadeInUp"> phone <span style="color:red;">&#42</span></label>
+              <input type="tel" id="phone" class="form-control" aria-describedby="sizing-addon1" placeholder="phone namber" required>
+            </div>
+            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="2.0s" style="margin-top: 20px;">
+              <label for="email" class="text wow fadeInUp"> email <span style="color:red;">&#42</span></label>
+              <input type="email" id="email" class="form-control" aria-describedby="sizing-addon1" placeholder="email" required>
+            </div>
+            <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="2.2s" style="margin-top: 20px;">
+              <label for="photo" class="text wow fadeInUp"> dog's photo </label>
+              <input type="file" id="photo" class="form-control" aria-describedby="sizing-addon1">
+            </div>
+            
+          <div class="col-md-12 wow fadeInUp" data-wow-delay="2.6s" style="margin-top: 20px;">
+            <div class="form-group text-right">
+              <input type="submit" value="send" class="btn btn-primary">
+            </div>
+          </div>
+        </div>
+      </form>
+     </div>
+    </div>
+  </div>
+  
+
+  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script>
+    $("form").submit(function(){
+      alert("Your registration form has been sent successfully");
+
+    });
+    </script>
+    <script>
+
+     $("form").submit(function(){
+        var dogname, dogbreed, pn, birthday, name, surname, phone, email, result;
+        dogname=$("#dogname").val();
+        dogbreed=$("#dogbreed").val();
+        pn=$("#pn").val();
+        age=$("#age").val();
+        name=$("#name").val();
+        phone=$("#phone").val();
+        email=$("#email").val();
+
+       result="dog name: " + dogname + "</br>" +
+       "breed: " + dogbreed + "</br>" +
+       "birthday: " + birthday + "</br>" +
+       "The P/N of the dog's owner: " + pn + "</br>" +
+       "Full name of the dog's owner: " + name + "</br>" +
+       "phone: " + phone + "</br>" +
+       "email: " + email + "</br>";
+      
+
+       $("#result").html(result);
+       $("form").fadeOut("slow");
+        $("#result").css({"margin-left":"50px", "margin-right":"50px", "padding-left":"20px", "padding-top":"20px", "padding-bottom":"20px", "background-color":"#a0db8e", "border-radius":"30px", "color":"#fff"});
+      });
+    
+    </script>
+    
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
+</html>

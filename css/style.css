@@ -1,0 +1,362 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    }
+
+li {
+    list-style: none;
+    display: inline-block
+}
+
+a {
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+h1, h2, h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.btn {
+
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+
+    background-color: #709963 !important;
+    color: #222222 !important;
+    border: 1px solid #709963 !important;
+}
+
+
+/*NAVIGATION*/
+
+
+.navbar {
+    
+    background-color: #a0db8e !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar a {
+    
+    color: #fff !important;
+    opacity: 0.7;
+}
+
+
+.navbar a:hover {
+    
+    opacity: 1;
+    background-color: #709963 !important;
+}
+
+
+
+/*HEADER*/
+
+.header {
+    
+    height: 600px;
+    width: 100%;
+    padding: 30px 0 30px;
+    margin-top: 50px;
+    background-image: url(../images/Nature-Dog-Wallpaper.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+
+.header img {
+    
+    height: 350px;
+    width: 450px;
+    margin: 70px 0 0 40px;
+}
+
+.header h1 {
+    
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.header h1, .header p, .header button {
+    margin-top: 20px;
+}
+
+.header .btn {
+    border-radius: 5px;
+    margin: 40px 30px;
+}
+
+
+@media(max-width:768px) {
+    
+    .header {
+        padding: 30px;
+        height: 750px;
+    }
+    
+    .header img {
+        width: 90%;
+        height: 300px;
+        margin: 20px 0 0 20px;
+    }
+    
+    .header .btn {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    .header p {
+        font-size: 10px;
+    }
+}
+
+
+/*pricing and services*/
+
+.pricing {
+    padding: 80px 0 80px;
+    text-align: center;
+    background-color: #e1bf96;
+}
+
+.pricing h2, .pricing p {
+    color: #fff;
+}
+
+.pricing p {
+    
+    padding-bottom: 20px;
+}
+
+.pricing .packages {
+    padding: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-top: 30px;
+}
+
+
+.packages li {
+    display: block;
+    padding: 5px;
+}
+
+.packages h4, .packages h1, .packages b {
+    color: #4c4c4c;
+}
+
+.packages p, .packages li {
+    color: #737373;
+}
+
+.packages button {
+    margin-top: 20px;
+}
+
+
+
+@media(max-width:768px) {
+    
+    .pricing {
+        
+        padding: 30px;
+    }
+    
+    .packages {
+        
+        width: 80%;
+        margin-left: 25px;
+    }
+}
+
+
+/*TEAM*/
+
+.team {
+    
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.team b, .team h2, .team h4 {
+    
+    margin: 20px 0 20px;
+    color: #4c4c4c;
+}
+
+
+.team p {
+    
+    color: #737373;
+}
+
+.team img {
+    
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+}
+
+
+.team i {
+    
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: #a0db8e;
+    color: #fff;
+}
+
+.team a:hover i {
+    
+    background-color: #709963;
+}
+
+
+
+
+/*CONTACT*/
+
+.contact {
+    
+    padding: 60px 0 60px 0;
+    text-align: center;
+}
+
+.contact p {
+    
+    padding-bottom: 60px;
+    color: #737373;
+}
+
+.contact h2 {
+    
+    color: #4c4c4c;
+    margin: 15px 0px;
+}
+
+.contact .input-group {
+    
+    margin-bottom: 25px;
+}
+
+.contact .form-control {
+    
+    border-radius: 0 !important;
+}
+
+.contact span {
+    
+    border-radius: 0 !important;
+}
+
+.contact .btn {
+    
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #e1bf96;
+    color: #fff;
+}
+
+.contact .btn:hover {
+    
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    
+    padding: 30px;
+    color: #fff;
+    background-color: #a0db8e;
+}
+
+
+.footer .social {
+    
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+i {
+    color:#fff !important;
+}
+
+i:hover {
+    color:#fff !important;
+    opacity: 0.6;
+}
+
+.footer input {
+    
+    height: 40px;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    background-color: #222222;
+    color: #222222;
+}
+
+.footer .btn {
+    
+    padding: 10px 5px 10px;
+    margin: 3px 0 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
